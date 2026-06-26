@@ -4,9 +4,10 @@ Landing page for **House of Lux** (by Anupam Sharma) — Gola Road, Patna.
 Plain HTML/CSS/JS, no build step, no framework. Deploy karna bahut easy hai.
 
 ## Files
-- `index.html` — page structure
+- `index.html` — page structure (logo image is embedded inline as base64, so it always shows up — no broken-image risk on any host)
 - `style.css` — saara design (3D hero, colors, layout)
 - `script.js` — mouse-tilt 3D effect + WhatsApp order form
+- `assets/logo.webp` — sirf reference copy of the logo (page khud isko use nahi karta, kyunki wo already index.html ke andar embedded hai)
 
 ## 1. GitHub par push karna
 
@@ -49,6 +50,8 @@ Agar phone number, WhatsApp ya Instagram handle change karna ho, to dhoondo:
 - `script.js` me — `const waNumber = "919060968792"`
 
 Sab jagah same number daal dena, simple find & replace se ho jayega.
+
+Logo change karna ho to naya image Claude ko bhej dena — wo usko base64 me convert karke `index.html` ke andar dobara embed kar dega (kyunki logo separate file ki tarah load nahi hota, seedha code ke andar baked hai).
 
 ## 4. Custom domain (optional)
 
